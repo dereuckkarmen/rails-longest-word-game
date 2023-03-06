@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+#    new GET  /new(.:format)   games#new
+#  score POST /score(.:format) games#score
+  get "new", to: "games#new"
+  post "score", to: "games#score"
+
 end
